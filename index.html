@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Document</title>
+</head>
+
+<body>
+  <header>
+    <nav class="navbar">
+      <div>
+        <img class="logo" src="assets/JobHop_4COLOR+STACKER.png" alt="Logo" />
+      </div>
+    </nav>
+  </header>
+
+  <div class="container">
+    <div class="form">
+      <form>
+        
+        <label for="title">Posizione Lavorativa</label>
+        <input type="text" placeholder="Scivi la posizione ricercata" id="title" />
+
+        <label for="location">Località</label>
+        <input type="text" placeholder="Scrivi la Località richiesta" id="location" />
+
+        <button type="button" onclick="ricerca()">Cerca</button>
+      </form>
+    </div>
+  </div>
+
+  <div id="risultatoRicerca"></div>
+
+  <script src="https://kit.fontawesome.com/5cb50dee25.js" crossorigin="anonymous"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>

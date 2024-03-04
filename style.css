@@ -1,0 +1,95 @@
+*/ {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-image: url(assets/cerco-lavoro.jpg);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    height: 100vh; 
+    margin: 0;
+    padding: 20px;
+    overflow: hidden;
+}
+
+/* stilizzo un po la Nav, inserisco un logo e delle icone*/
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    width: 100%;
+}
+
+.logo {
+    height: auto;
+    width: 20%;
+}
+
+.nav-icons{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center; 
+    gap: 20px; 
+    margin-left: auto;
+}
+
+
+/* faccio delle modifiche al container che contiene il Form aggiungendoci anche un background image*/
+.container {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    background-color: rgb(105, 226, 242); 
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.form {
+    width: 100%; 
+    max-width: 600px; 
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.form label, .form input, .form button {
+    display: block;
+    width: 100%; 
+}
+
+.form input, .form button {
+    margin-top: 10px; 
+    margin-bottom: 10px;
+  }
+
+.form button {
+    padding: 10px;
+    background-color: #007bff;
+    color: rgb(105, 51, 51);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: auto;
+}
+
+.form button:hover {
+    background-color: #0056b3;
+}
+
+
+/* modifico il div dove uscirà la lista dei risultati della ricerca*/
+
+#risultatoRicerca{
+    color: rgb(3, 3, 3);
+    background-color: white;
+    margin-top: 50px;
+    padding-right: 10px;
+}

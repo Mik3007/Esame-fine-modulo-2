@@ -146,8 +146,8 @@ function ricerca() {
 
   // creo due variabili, una dove andrà il risultato della ricerca, una per il contatore.
   
-  console.log("Input titolo: ", titolo);
-  console.log("Input localita: ", localita);
+  //console.log("Input titolo: ", titolo);
+  //console.log("Input localita: ", localita);
   let result = [];
   let counter = 0;
 
@@ -156,8 +156,8 @@ function ricerca() {
   jobs.forEach(function (job) {
     const jobTitle = job.title.toLowerCase();
     const jobLocation = job.location.toLowerCase();
-    console.log(jobTitle);
-    console.log(jobLocation);
+  //console.log(jobTitle);
+  //console.log(jobLocation);
 
     if (jobTitle.includes(titolo) && jobLocation.includes(localita)) {
       result.push(job);
@@ -165,8 +165,8 @@ function ricerca() {
   });
   counter = result.length;
 
-  console.log(result);
-  console.log(counter);
+  //console.log(result);
+  //console.log(counter);
 
   risultato.innerHTML = "";
 
